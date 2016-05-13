@@ -20,15 +20,16 @@ console.log('`About` component loaded asynchronously');
   `],
   template: `
   <md-card>
+    <h3>
+      Hello, this is an About page!
+    </h3>
+    <p>This projects was built for learning purposes.
+    First learned React+Redux, now I'm getting to know Angular 2. Both are awesome!</p>
+  </md-card>
+  <md-card>
     For hot module reloading run
     <pre>npm run start:hmr</pre>
   </md-card>
-  <md-card>
-    <h3>
-      patrick@AngularClass.com
-    </h3>
-  </md-card>
-
   `
 })
 export class About {
