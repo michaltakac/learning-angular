@@ -1,0 +1,22 @@
+<h1>ngFor</h1>
+<table>
+  <thead>
+  <tr>
+     <th>Name</th>
+     <th>Index</th>
+     <th>First</th>
+     <th>Last</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr *ngFor="let hero of heroes; let i = index; trackBy: hero?.id
+              let isFirst = first; let isLast = last">
+     <td>{{hero.name}}</td>
+     <td>{{i}}</td>
+     <td>{{isFirst}}</td>
+     <td>{{isLast}}</td>
+  </tr>
+ </tbody>
+</table>
+
+<hr />
