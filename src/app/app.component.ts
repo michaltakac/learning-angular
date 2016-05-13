@@ -5,6 +5,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 import {RouteConfig, Router} from '@angular/router-deprecated';
 
 import {Home} from './home';
+import {ColorButton} from './color-button';
 import {HelloWorld} from './hello-world';
 import {AppState} from './app.service';
 import {RouterActive} from './router-active';
@@ -90,7 +91,8 @@ import {RouterActive} from './router-active';
   { path: '/home',  name: 'Home',  component: Home },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
   { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
-  { path: '/hello-world', name: 'Hello World', component: HelloWorld }
+  { path: '/hello-world', name: 'Hello World', component: HelloWorld },
+  { path: '/color-button', name: 'Color button', component: ColorButton }
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
